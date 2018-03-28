@@ -65,7 +65,7 @@ igr_dict =  {
 conn = jsonParser.conn
 
 def getCompartments():
-    ### print out the names, id of all compartments in the DB and the number of ingredients in each compartment
+    # print out  name and id of all compartments in the DB and the number of ingredients in each compartment
     sql = "SELECT * FROM compartments"
     res = sql_query(conn, sql, displayNRecords="all")
     if not table_view:
